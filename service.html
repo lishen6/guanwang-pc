@@ -15,7 +15,13 @@
 		<a href="index.html"><img src="img/logo.png" alt="" class="logo-img"/></a>
 		<div class="index-block-btn">
 			<a href="index.html">首页</a>
-			<a href="#">应用</a>
+			<a href="#" class="yingyong">应用
+				<div class="arrow-down">
+					<h6></h6>
+					<div class="fir">智能对账收款</div>
+					<div class="sed">在线信用融资</div>				
+				</div>
+			</a>
 			<a href="price.html">价格</a>
 			<a href="download.html">下载</a>
 			<a href="service.html" class="active">服务</a>
@@ -95,4 +101,14 @@
 </div>
 </body>
 <!--<script type="text/javascript" src="js/index.js" ></script>-->
+<script>
+	$(function(){
+		$(".fir").on("click",function(){
+			window.location.href = 'money.html'
+		})
+		$(".sed").on("click",function(){
+			window.location.href = 'rongzi.html'
+		})
+	})
+</script>
 </html>
