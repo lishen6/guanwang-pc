@@ -12,14 +12,20 @@
 <body>
 <div class="index-block1">
 	<div class="index-block1-top">
-		<img src="img/logo.png" alt="" class="logo-img"/>
+		<a href="index.html"><img src="img/logo.png" alt="" class="logo-img"/></a>
 		<div class="index-block-btn">
-			<a href="#" class="active">首页</a>
-			<a href="#">应用</a>
-			<a href="#">价格</a>
-			<a href="#">下载</a>
-			<a href="#">服务</a>
-			<p><a href="#">登录</a> / <a href="#">注册</a></p>
+			<a href="index.html" class="active">首页</a>
+			<a href="#" class="yingyong">应用
+				<div class="arrow-down">
+					<h6></h6>
+					<div class="fir">智能对账收款</div>
+					<div class="sed">在线信用融资</div>				
+				</div>
+			</a>
+			<a href="price.html">价格</a>
+			<a href="download.html">下载</a>
+			<a href="service.html">服务</a>
+			<p><a href="login.html">登录</a> / <a href="#">注册</a></p>			
 		</div>
 	</div>
 	<div class="swiper-container swiper-container-index" id="swiper-container1">
@@ -124,12 +130,12 @@
 		<p><i>媒</i>体报道与奖项</p>
 	</div>
 	<div class="index-block5-center">
-		<a href="#" class="active">最佳B2B协作</a>  |  
-		<a href="#">B2B50强</a>  |  
-		<a href="#">征信金鼎</a>  |  
-		<a href="#">供应链金融标杆</a>  |  
-		<a href="#">最佳风控</a>
-		<img src="img/index5-02.jpg" alt="" />
+		<a class="active">最佳B2B协作</a>  |  
+		<a>B2B50强</a>  |  
+		<a>征信金鼎</a>  |  
+		<a>供应链金融标杆</a>  |  
+		<a>最佳风控</a>
+		<img src="img/power1.jpg" alt="" class="index-block5-center-img"/>
 	</div>
 	<div class="index-block5-center2">
 		《文沥应邀担任中国供应链金融产业 生态联盟副理事长》
@@ -167,4 +173,24 @@
 </div>
 </body>
 <script type="text/javascript" src="js/index.js" ></script>
+<script>
+	$(function(){
+		var imgArr = ['img/power1.jpg','img/power2.png','img/power3.jpg','img/power4.jpg','img/power5.jpg'],
+		    _src = '';
+		$(".index-block5-center a").on("click",function(){
+			if(!$(this).hasClass('active')){
+				$(this).addClass('active').siblings('a').removeClass('active');
+				var _index = $(this).index();
+				_src = imgArr[_index];
+				$(".index-block5-center-img").attr("src",_src)
+			}			
+		})
+		$(".fir").on("click",function(){
+			window.location.href = ''
+		})
+		$(".sed").on("click",function(){
+			window.location.href = 'rongzi.html'
+		})
+	})
+</script>
 </html>
