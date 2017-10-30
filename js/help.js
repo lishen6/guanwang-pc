@@ -18,16 +18,16 @@ $(function(){
 			$(this).addClass('active').siblings().removeClass('active');
 		}
 	})
-	 $(".gouseone").on("click",function(){
-   	  window.location.href = 'useone.html';
-   })
-   $(".goduizhang").on("click",function(){
-   	  window.location.href = 'duizhang.html';
-   })
-   $(".goxinyongrongzhi").on("click",function(){
-   	  window.location.href = 'xinyongrongzhi.html';
-   })
-   $(".godianzizhengshu").on("click",function(){
-   	  window.location.href = 'dianzizhengshu.html';
-   })
+//	 $(".gouseone").on("click",function(){
+// 	  window.location.href = 'useone.html';
+// })
+// $(".goduizhang").on("click",function(){
+// 	  window.location.href = 'duizhang.html';
+// })
+// $(".goxinyongrongzhi").on("click",function(){
+// 	  window.location.href = 'xinyongrongzhi.html';
+// })
+// $(".godianzizhengshu").on("click",function(){
+// 	  window.location.href = 'dianzizhengshu.html';
+// })
 })
