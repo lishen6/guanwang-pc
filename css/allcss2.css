@@ -2149,6 +2149,8 @@ nav {
           box-sizing: border-box;
 }
 .suggest-left li {
+	width: 65%;
+  float: right;
   padding-left: 95px;
   height: 80px;
   font-size: 25px;
